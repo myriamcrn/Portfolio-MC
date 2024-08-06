@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import { useState } from "react";
+import { Header } from "./components/Header/Header";
+import { Description } from "./components/Description/Description";
+import { FirstTransition } from "./components/FirstTransition/FirstTransition";
+import { Skills } from "./components/Skills/Skills";
+import { WelcomePage } from "./components/WelcomePage/WelcomePage";
+import { SecondTransition } from "./components/SecondTransition/SecondTransition";
+import { Work } from "./components/Work/Work";
+import { Footer } from "./components/Footer/Footer";
+import { PopUpWork } from "./components/PopUpWork/PopUpWork";
+import { PopUpBurger } from "./components/PopUpBurger/PopUpBurger";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [isOpen, setIsOpen] = useState(false);
+  const [burgerMenu, setBurgerMenu] = useState(false);
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <main>
+      <Header burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} />
+      <PopUpBurger burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} />
+      <WelcomePage />
+      <FirstTransition />
+      <Description />
+      <Skills />
+      <SecondTransition />
+      <PopUpWork isOpen={isOpen} setIsOpen={setIsOpen} />
+      <Work isOpen={isOpen} setIsOpen={setIsOpen} />
+      <Footer />
+    </main>
+  );
 }
 
-export default App
+export default App;

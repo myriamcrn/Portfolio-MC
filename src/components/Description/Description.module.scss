@@ -1,0 +1,84 @@
+.description {
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+  height: 900px;
+}
+
+.presentationTitle {
+  font-size: 90px;
+
+  padding: 10px;
+}
+.intro {
+  font-size: 60px;
+  padding: 10px;
+}
+
+.presentation {
+  font-size: 15px;
+  padding: 10px;
+}
+
+// .button {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border: 1px solid white;
+// height: 40px;
+// width: 120px;
+//   border-radius: 50px;
+// }
+.button {
+  border: 1px solid currentColor;
+  border-radius: 50px;
+  color: white;
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 400;
+  overflow: hidden;
+  padding: 10px 20px;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+  margin-top: 10px;
+}
+
+.button::after {
+  background-color: #f07eff;
+  border-radius: 3rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.button:hover::after {
+  transform: translate(0, 0);
+}
+
+.button:hover {
+  border: 2px solid transparent;
+  color: white;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+.secondimg {
+  height: 600px;
+  width: 500px;
+
+  background-color: #f07eff;
+}

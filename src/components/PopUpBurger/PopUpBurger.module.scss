@@ -1,0 +1,41 @@
+.popUpBurger {
+  width: 100dvw;
+  height: 100dvh;
+  background-color: black;
+  color: white;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 400;
+}
+
+.section {
+  --s: 0.1em; /* the thickness of the line */
+  --c: #f07eff; /* the color */
+
+  color: white;
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, white 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+a:hover {
+  --_p: 100%;
+}
+
+a {
+  font-size: 5rem;
+  cursor: pointer;
+}

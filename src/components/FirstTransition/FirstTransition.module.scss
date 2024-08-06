@@ -1,0 +1,26 @@
+.firstTransition {
+  height: 900px;
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sentence1 {
+  font-size: 70px;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-style: italic;
+}
+.sentence2 {
+  font-size: 90px;
+  text-align: center;
+  line-height: 80px;
+}
+
+.line {
+  background-color: white;
+  height: 40px;
+  width: 2px;
+  margin: 30px;
+}

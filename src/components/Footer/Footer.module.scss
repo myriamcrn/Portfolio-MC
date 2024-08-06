@@ -1,0 +1,34 @@
+#Footer {
+  margin-top: 100px;
+  height: 800px;
+  width: 100%;
+  overflow: hidden; /* Masque le texte qui dépasse */
+  background-color: black; /* Couleur de fond, optionnelle */
+  white-space: nowrap; /* Empêche le texte de se plier */
+}
+
+.finalTitle {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-size: 20px;
+  font-family: "poppins";
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 30s linear infinite; /* Définit l'animation */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
