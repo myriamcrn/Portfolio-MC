@@ -21,19 +21,10 @@
   padding: 10px;
 }
 
-// .button {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   border: 1px solid white;
-// height: 40px;
-// width: 120px;
-//   border-radius: 50px;
-// }
 .button {
   border: 1px solid currentColor;
   border-radius: 50px;
-  color: white;
+  color: black;
   font-family: "Poppins";
   font-size: 15px;
   font-weight: 400;
@@ -48,7 +39,7 @@
 }
 
 .button::after {
-  background-color: #f07eff;
+  background-color: #ff731d;
   border-radius: 3rem;
   content: "";
   display: block;
@@ -70,15 +61,8 @@
 }
 
 .button:hover {
-  border: 2px solid transparent;
+  border: 1px solid black;
   color: white;
   transform: scale(1.05);
   will-change: transform;
-}
-
-.secondimg {
-  height: 600px;
-  width: 500px;
-
-  background-color: #f07eff;
 }

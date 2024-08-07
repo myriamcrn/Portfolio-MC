@@ -40,7 +40,9 @@ export const Description = () => {
           More about me
         </button>
       </div>
-      <div className={styles.secondimg}></div>
+      <div className={styles.portrait}>
+        <img src="/src/assets/mymy.jpg" alt="Myriam Caron" />
+      </div>
     </section>
   );
 };

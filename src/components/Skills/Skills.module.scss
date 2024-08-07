@@ -1,21 +1,41 @@
 .skills {
-  background-color: white;
-  height: 900px;
-  width: 100dvw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 60px;
+  height: 400px;
+  width: 100%;
 }
 
 .framework {
-  padding: 20px;
-  font-size: 50px;
   display: flex;
-  align-items: flex-end;
-  border: 1px solid black;
-  height: 600px;
-  width: 1000px;
-  color: black;
-  background-color: white;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 200px;
+  font-family: "poppins";
+}
+.technos {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px;
+}
+
+.techno {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+
+.techno:hover {
+  -webkit-transform: scale(1.25); /* Safari and Chrome */
+  -moz-transform: scale(1.25); /* Firefox */
+  -ms-transform: scale(1.25); /* IE 9 */
+  -o-transform: scale(1.25); /* Opera */
+  transform: scale(1.25);
+}
+
+.techno:hover {
+  width: 100px;
 }

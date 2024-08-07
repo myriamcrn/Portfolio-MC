@@ -1,8 +1,8 @@
 .popUpBurger {
   width: 100dvw;
   height: 100dvh;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .close {
@@ -22,9 +22,9 @@
   --s: 0.1em; /* the thickness of the line */
   --c: #f07eff; /* the color */
 
-  color: white;
+  color: black;
   padding-bottom: var(--s);
-  background: linear-gradient(90deg, var(--c) 50%, white 0)
+  background: linear-gradient(90deg, var(--c) 50%, black 0)
       calc(100% - var(--_p, 0%)) / 200% 100%,
     linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
   -webkit-background-clip: text, padding-box;
